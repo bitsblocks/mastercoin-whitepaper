@@ -1,4 +1,4 @@
-== Link Bookmarking & Voting Sample Rails App
+## Link Bookmarking & Voting Sample Rails App
 
 Let's you:
 
@@ -7,6 +7,6 @@ Let's you:
 * Sort links by the newest or hot
 
 
-=== History
+### History
 
 Initialy Based on Sinatra Version [(Article)](http://www.drurly.com/blog/2012/06/05/build-reddit-in-sinatra)
