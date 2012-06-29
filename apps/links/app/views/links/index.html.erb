@@ -1,0 +1,32 @@
+
+
+<table id='links'>
+<% @links.each do |l| %>
+
+<tr>
+  <td class='points'>
+    <%= form_for l, :url => vote_link_path( l, :type => '1' ), :method => 'PUT' do |f| %>
+      <%= f.submit '+1' %>
+    <% end %>
+      
+    <%= l.points %>
+
+    <%= form_for l, :url => vote_link_path( l, :type => '-1' ), :method => 'PUT' do |f| %>
+      <%= f.submit '-1' %>
+    <% end %>            
+  </td>
+  <td class='title'><%= link_to l.title, l.url %></td>
+</tr>
+  
+<% end %>
+</table>
+
+<div id='post-link'>
+
+  <%= form_for :link, :url => links_path() do |f| %>
+    <%= f.text_field :title, :placeholder => 'Title' %>
+    <%= f.text_field :url,   :placeholder => 'URL' %>
+    <%= f.submit 'Save Link' %>
+  <% end %>
+  
+</div>
