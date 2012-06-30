@@ -23,5 +23,10 @@ class Link < ActiveRecord::Base
   def self.hot
     self.all.each { |rec| rec.recalc_score }.sort { |l,r| l.score <=> r.score }.reverse
   end
+  
+  def url_host
+    uri = URI.parse( url )
+    uri.host
+  end
 
 end # class Link

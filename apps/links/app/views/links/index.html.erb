@@ -15,7 +15,10 @@
       <%= f.submit '-1' %>
     <% end %>            
   </td>
-  <td class='title'><%= link_to l.title, l.url %></td>
+  <td><span class='title'><%= link_to l.title, l.url %></span>
+      <span class='host'>(<%= l.url_host %>)</span>
+      <span class='created-at'>posted <%= time_ago_in_words(l.created_at) %> ago</span>
+  </td>
 </tr>
   
 <% end %>

@@ -29,7 +29,13 @@ h1.title { text-align: center;
  font-size: 120%;
  font-weight:  bold;
  padding-left: 30px;
-}  
+}
+
+#links .host,
+#links .created-at {
+ font-size: 80%;
+ color: grey;
+}
 
 #post-link {
   margin-top: 25px;
