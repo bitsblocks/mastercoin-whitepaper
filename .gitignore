@@ -1,4 +1,4 @@
-apps/links/.bundle
-apps/links/db/*.sqlite3
-apps/links/log/*.log
-apps/links/tmp/
+apps/links-rails/.bundle
+apps/links-rails/db/*.sqlite3
+apps/links-rails/log/*.log
+apps/links-rails/tmp/
