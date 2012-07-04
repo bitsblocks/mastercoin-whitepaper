@@ -10,7 +10,7 @@ Let's you:
 
 Setup the database, that is, `links.sqlite3`. Issue the command:
 
-    $rake db:setup    # db:create db:migrate db:seed
+    $ rake db:setup    # db:create db:migrate db:seed
 
 Ready to roll. Issue the command:
 
