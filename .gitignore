@@ -1,4 +1,4 @@
-apps/links-rails/.bundle
-apps/links-rails/db/*.sqlite3
-apps/links-rails/log/*.log
-apps/links-rails/tmp/
+# komodo project file
+
+*.kpf
+
